@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- fav-icon -->
+  <link rel="shortcut icon" href="Assets/img/v.png" type="image/x-icon" />
+
+  <!-- fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="Assets/css/style.css">
+
+  <title>VectaX Soluções</title>
+</head>
+
+<!-- button whatsapp -->
+<div class="buttons-links" id="buttons-link">
+  <div id="backToTop">
+    <img src="Assets/img/icons/buttom-up.png" alt="">
+  </div>
+
+  <div class="button-Whatsapp">
+    <a target="_blank" href="https://wa.me/5584991181991"><img src="Assets/img/icons/whatsapp.svg">
+    </a>
+  </div>
+</div>
+
+<body>
+  <header>
+    <div class="pre-wrapper">
+      <div class="pre-nav">
+        <div class="social-media-desktop">
+
+          <!-- facebook -->
+          <a href=" https://www.facebook.com/profile.php?id=100078330401875
+          " target="_blank">
+            <img src="Assets/img/icons/facebook.png" alt="">
+          </a>
+          <!-- instagram -->
+          <a href="https://www.instagram.com/click.massa/
+          " target="_blank">
+            <img src="Assets/img/icons/Instagram.png" alt="">
+          </a>
+          <!-- Youtube -->
+          <a href="https://www.youtube.com/channel/UCaBhP1iyy-8XC27cfFe3gHg" target="_blank">
+            <img src="Assets/img/icons/youtube.png" alt="">
+          </a>
+          <!-- Linkedin -->
+          <a href="https://www.linkedin.com/company/vectax-solu%C3%A7%C3%B5es/mycompany/?viewAsMember=true"
+            target="_blank">
+            <img src="Assets/img/icons/LinkedIn.png" alt="">
+          </a>
+        </div>
+
+        <div class="contatos">
+          <div>
+            <img src="Assets/img/icons/whatsapp.svg" alt="">
+            <p>84 99118-1991</p>
+          </div>
+
+          <div>
+            <img src="Assets/img/icons/letter.png" alt="">
+            <p>clickmassa@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="navigation">
+        <div>
+          <a id="logo" href="#home">
+            <img src="Assets/img/logo-white.png" alt="logo da empresa Vectax" />
+          </a>
+        </div>
+
+        <!-- desktop -->
+        <nav id="nav-desktop">
+          <ul>
+            <li><a onclick="addActive()" href="#home">Início</a></li>
+            <li> <a href="#about">Quem somos</a> </li>
+            <li><a href="#culture">Cultura</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#depoimentos">Comentarios</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+
+          <button class="button">
+            <a href="https://bit.ly/wppclickmassa" target="_blank">Falar com especialista
+            </a>
+          </button>
+        </nav>
+
+        <!-- mobile -->
+        <nav id="nav">
+          <button id="active-btn-mobile" onclick="activeMenu()">
+            <span id="hamburguer"></span></button>
+          <div id="menu">
+            <div class="menu-links">
+              <ul>
+                <li><a onclick="activeMenu()" href="#home">Início</a></li>
+                <li><a onclick="activeMenu()" href="#about">Quem somos</a> </li>
+                <li><a onclick="activeMenu()" href="#culture">Cultura</a></li>
+                <li><a onclick="activeMenu()" href="#produtos">Produtos</a></li>
+                <li><a onclick="activeMenu()" href="#depoimentos">Comentarios</a></li>
+                <li><a onclick="activeMenu()" href="#contato">Contato</a></li>
+              </ul>
+
+              <button class="button">
+                <a href="https://bit.ly/wppclickmassa" target="_blank">Falar com especialista
+                </a>
+              </button>
+
+              <div class="social-media">
+                <!-- facebook -->
+                <a href=" https://www.facebook.com/profile.php?id=100078330401875
+                " target="_blank">
+                  <img src="Assets/img/icons/facebook.png" alt="">
+                </a>
+                <!-- instagram -->
+                <a href="https://www.instagram.com/click.massa/
+                " target="_blank">
+                  <img src="Assets/img/icons/Instagram.png" alt="">
+                </a>
+                <!-- Youtube -->
+                <a href="https://www.youtube.com/channel/UCaBhP1iyy-8XC27cfFe3gHg" target="_blank">
+                  <img src="Assets/img/icons/youtube.png" alt="">
+                </a>
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/company/vectax-solu%C3%A7%C3%B5es/mycompany/?viewAsMember=true"
+                  target="_blank">
+                  <img src="Assets/img/icons/LinkedIn.png" alt="">
+                </a>
+              </div>
+              <div class="logoV">
+                <img src="Assets/img/v.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="wrapper">
+      <div class="container">
+        <div class="header">
+          <h4>BOAS-VINDAS A VECTAX 👋</h4>
+          <h1>MULTIPLIQUE SUAS VENDAS</h1>
+        </div class="header">
+
+        <div class="content">
+          <p>
+            Saiba como mais de 200 clientes vendem e atendem seu cliente de
+            maneira eficiente através de nossas estratégias.
+          </p>
+
+          <a href="https://bit.ly/wppclickmassa"   target="_blank"><button class="button" >Saiba mais</button></a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>+3.500</h3>
+          <p>Usuarios simuntâneo</p>
+        </div>
+
+        <div class="stat">
+          <h3>+20</h3>
+          <p>Colaboradores</p>
+        </div>
+
+        <div class="stat">
+          <h3>+300</h3>
+          <p>Clientes Satisfeitos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="content">
+        <div>
+          <h1 class="title">Quem <span>somos</span></h1>
+          <h2>Entenda quem somos e por que existimos</h2>
+
+          <div>
+            <img src="Assets/img/light.png" alt="">
+          </div>
+        </div>
+        <p>
+         Somos uma empresa inovadora, que coloca a satisfação do cliente em primeiro lugar. Além disso, nós nos posicionamos como especialistas em estratégias de WhatsApp, o que nos permite oferecer soluções customizadas e eficazes aos nossos clientes. Para garantir a qualidade de nossos serviços, contamos com um laboratório de testes rigoroso e bem equipado, onde testamos e aprimoramos constantemente nossas soluções. Em resumo, nosso objetivo é entregar a melhor experiência possível aos nossos clientes.
+        </p>
+      </div>
+      <img src="Assets/img/sentado.png" alt="" />
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section id="culture">
+    <div class="wrapper">
+
+      <h1 class="title">Nossa <span>Cultura</span></h1>
+      <p class="paragrafo">
+        Com pouco mais de 2 anos, a <strong>VectaX</strong> já conquistou espaço no mercado.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="info">
+            <img src="Assets/img/visao.png" />
+            <h2>Nossa Visão</h2>
+            <p>
+              Ser a maior empresa do nordeste em plataformas ominichanel de
+              atendimento digital até 2024.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="info">
+            <img src="Assets/img/proposito.png" />
+            <h2>Nosso Proposito</h2>
+            <p>
+              Inspirar a inovação e automação sem perder a humanidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="info">
+            <img src="Assets/img/valores.png" />
+            <h2>Nossos Valores</h2>
+            <ul>
+              <li>Liberdade</li>
+              <li>Entusiasmo</li>
+              <li>Respeito</li>
+              <li>Transparência</li>
+              <li>Overdelivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="trajetoria">
+    <div class="wrapper">
+      <div class="card-trajetoria">
+        <div class="header">
+          <h1 class="title">Conheça nossa <span>trajetoria</span></h1>
+          <p>Confira na nossa linha do tempo todas as realizações e inovações que fizeram da <strong>Vectax</strong> ser
+            a maior do RN!
+          </p>
+        </div>
+        <div class="cards">
+          <!-- card1 -->
+          <div class="card">
+            <div class="info">
+              <div class="titulo">
+                <h1>Vectax</h1>
+                <p>Pico da pandemia começamos nosso negócio (Wanderley Cunha e André Candido) com uma mochila nas costas
+                  nas mesas de restaurantes e cafés, atendendo clientes em todo Brasil, com apenas 01 produto, chegamos
+                  a 200 clientes!</p>
+              </div>
+              <div class="data">
+                <h1>2020</h1>
+              </div>
+            </div>
+            <div class="imagem">
+              <img src="Assets/img/v.png" alt="">
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="card clickmassapro">
+            <div class="info">
+              <div class="titulo">
+                <h1>Clickmassa Pro</h1>
+                <p>Começamos a estruturação do time e parceiros, conseguimos como clientes empresas de expressão
+                  nacional, com o 3 pessoas na equipe e 03 produtos, chegamos a um pouco mais de 500 clientes.</p>
+              </div>
+              <div class="data">
+                <h1>2021</h1>
+              </div>
+            </div>
+            <div class="imagem">
+              <img src="Assets/img/produtos-click/pro.png" alt="">
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="card clickmassaplus">
+            <div class="info">
+              <div class="titulo">
+                <h1>Clickmassa Plus</h1>
+                <p>Foi o ano do ALL-IN, pulamos de 03 pessoas no time para 23, saimos de 03 produtos para 08, em um
+                  deles temos mais de 3 mil clientes cadastrados, em nossos produtos de recorrência ultrapassamos os
+                  1000 clientes.</p>
+              </div>
+              <div class="data">
+                <h1>2022</h1>
+              </div>
+            </div>
+            <div class="imagem">
+              <img src="Assets/img/produtos-click/Plus.png" alt="">
+            </div>
+          </div>
+          <!-- card4 -->
+          <div class="card enterprise">
+            <div class="info">
+              <div class="titulo">
+                <h1>Enterprise</h1>
+                <p>Carregando...</p>
+              </div>
+              <div class="data">
+                <h1>2023</h1>
+              </div>
+            </div>
+            <div class="imagem">
+              <img src="Assets/img/produtos-click/enterprise.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- ================ -->
+      </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section id="produtos">
+    <div class="wrapper">
+      <div class="produtos-info">
+        <h1 class="title">Nossos <span>Produtos</span></h1>
+        <div>
+          <h3>O QUE PODEMOS FAZER...</h3>
+          <p>Como uma empresa <span>omnichannel</span>, podemos oferecer soluções para gerenciar suas interações com
+            clientes em vários canais, incluindo WhatsApp, instagram, facebook, além de outras plataformas de mensagem,
+            redes sociais e mais.
+          </p>
+        </div>
+          <div class="tituloProdutos">
+            <h1>Produtos Clickmassa</h1>
+          </div>
+      </div>
+      
+
+      <div class="container2" id="container2">
+        <!-- desktop -->
+        <div class="item2">
+          <div class="cards2">
+
+            <div class="product-card2">
+              <div class="img">
+                <img src="Assets/img/produtos-click/desktop.png" alt="">
+              </div>
+              <div class="details">
+                <div class="titulo-produtos">
+                  <div class="titulo">
+                    <h2>Pare de perder <br><span>Tempo e dinheiro!</span></h2>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5555849911819&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20VectaX%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Clickmassa%20Desktop!%20"
+                    target="_blank">
+                    <button>
+                      clique aqui
+                    </button>
+                  </a>
+                </div>
+
+                <div class="info-produtos">
+                  <ul>
+                    <li>Envios em massa ilimitados</li>
+                    <li> Envio com botões (call to action)</li>
+                    <li> Envios e extrator de grupos</li>
+                    <li> Filtro de números</li>
+                    <li>Gerador de números</li>
+                    <li> Respostas automáticas</li>
+                    <li> Envio de arquivos (imagens, áudio, vídeo, pdf)</li>
+                    <li>Relatórios personalizados</li>
+                    <li>E muito mais!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="side">
+              <div class="divide">
+                <img src="Assets/img/produtos-click/foto-desktop.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- standard -->
+        <div class="item2">
+          <div class="cards2">
+
+            <div class="product-card2">
+              <div class="img">
+                <img src="Assets/img/produtos-click/standart.png" alt="">
+              </div>
+              <div class="details">
+                <div class="titulo-produtos">
+                  <div class="titulo">
+                    <h2>Esse pacote é ideal para você <br><span>Empreendedor</span></h2>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5555849911819&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20VectaX%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Clickmassa%20Standard!%20"
+                    target="_blank">
+                    <button>
+                      clique aqui
+                    </button>
+                  </a>
+                </div>
+
+                <div class="info-produtos">
+                  <ul>
+                    <li>Envios em massa ilimitados</li>
+                    <li> Envio com botões (call to action)</li>
+                    <li> Envios para grupos</li>
+                    <li> Filtro de números</li>
+                    <li>API integrada</li>
+                    <li> Respostas automáticas</li>
+                    <li> Envio de arquivos (imagens, áudio, vídeo, pdf)</li>
+                    <li>Relatórios personalizados</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="side">
+              <div class="divide">
+                <img src="Assets/img/produtos-click/foto-standard.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pro -->
+        <div class="item2" id="pro">
+          <div class="cards2">
+
+            <div class="product-card2">
+              <div class="img">
+                <img src="Assets/img/produtos-click/pro.png" alt="">
+              </div>
+              <div class="details">
+                <div class="titulo-produtos">
+                  <div class="titulo">
+                    <h2>A ferramenta profissional para quem precisa <br><span>do melhor</span></h2>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5555849911819&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20VectaX%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Clickmassa%20Pro!%20"
+                    target="_blank">
+                    <button>
+                      clique aqui
+                    </button>
+                  </a>
+                </div>
+
+                <div class="info-produtos">
+                  <ul>
+                    <li>Setup personalizado</li>
+                    <li>Consultoria focada em resultado mensal</li>
+                    <li>Envios em massa</li>
+                    <li>Atendimentos ilimitados</li>
+                    <li> Funil</li>
+                    <li>Notificação inteligente</li>
+                    <li>Robôs para atendimento</li>
+                    <li>Gerenciamento de departamento</li>
+                    <li>Relatorios completos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="side">
+              <div class="divide">
+                <img src="Assets/img/produtos-click/foto-pro.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- plus -->
+        <div class="item2">
+          <div class="cards2">
+
+            <div class="product-card2">
+              <div class="img">
+                <img src="Assets/img/produtos-click/Plus.png" alt="">
+              </div>
+              <div class="details">
+                <div class="titulo-produtos">
+                  <div class="titulo">
+                    <h2>Esse pacote é ideal para você <span>Empreendedor</span></h2>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5555849911819&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20VectaX%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Clickmassa%20Plus!%20"
+                    target="_blank">
+                    <button>
+                      clique aqui
+                    </button>
+                  </a>
+                </div>
+
+                <div class="info-produtos">
+                  <ul>
+                    <li>Dashboad Completo</li>
+                    <li>Consultoria focada em resultado mensal</li>
+                    <li>Atendimentos ilimitados</li>
+                    <li>Robôs para atendimento</li>
+                    <li>Envios em massa</li>
+                    <li>Gerenciamento de departamento</li>
+                    <li>Multicanais (facebook e instagram)</li>
+                    <li>Tags do atendimento</li>
+                    <li>Relatorios completos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="side">
+              <div class="divide">
+                <img src="Assets/img/produtos-click/foto-plus.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Enterprise -->
+        <div class="item2">
+          <div class="cards2 enterprise">
+
+            <div class="product-card2 enterprise ">
+              <div class="img">
+                <img src="Assets/img/produtos-click/enterprise.png" alt="">
+              </div>
+              <div class="details">
+                <div class="titulo-produtos">
+                  <div class="titulo">
+                    <h2>Nosso foco <br><span>Seu sucesso!</span></h2>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5555849911819&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20VectaX%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Clickmassa%20Enterprise!%20"
+                    target="_blank">
+                    <button>
+                      clique aqui
+                    </button>
+                  </a>
+                </div>
+
+                <div class="info-produtos ">
+                  <ul>
+                    <li>Setup personalizados</li>
+                    <li>consultoria focada em resultado mensal</li>
+                    <li>Atendimentos ilimitados</li>
+                    <li>Mensagens ilimitadas</li>
+                    <li>Robôs para atendimento</li>
+                    <li>Chat para atendimento humano</li>
+                    <li>Gerenciamneto de departamentos</li>
+                    <li>Dashboad completo</li>
+                    <li>Extração de conversas via PDF</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="side">
+              <div class="divide">
+                <img src="Assets/img/produtos-click/foto-enterprise.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="button-scroll">
+        <button onclick="movertoleftt()"><img src="Assets/img/icons/arrow-left.png" alt=""></button>
+        <button onclick="movertorightt()"><img src="Assets/img/icons/arrow-right.png" alt=""></button>
+      </div>
+
+      <div class="tituloProdutos">
+        <h1>Outros Produtos</h1>
+      </div>
+      <div class="container" id="container1">
+        <!-- produto1 -->
+        <div class="item">
+          <div class="cards">
+            <div id="1" class="product-card">
+              <div class="img"><img src="Assets/img/produtos/chipsms.png" alt=""></div>
+              <div class="details">
+                <h2>Seu painel de compra de <br><span>Chips virtuais</span></h2>
+                <p>
+                  Dezenas de serviços (Whatsapp, instagram, telegram, uber e muitos outros aplicativos. Todos os países,
+                  sem
+                  burocracia. Perfeito para sua operação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produto2 -->
+        <div class="item">
+          <div class="cards">
+            <div id="1" class="product-card">
+              <div class="img"><img src="Assets/img/produtos/voip.png" alt=""></div>
+              <div class="details">
+                <h2>Melhores seus <br><span>Resultados </span></h2>
+                <ul>
+                  <li>Ligações ilimitadas para qualquer operadora</li>
+                  <li>Bina inteligente com o DDD da cidade</li>
+                  <li>Discador automático</li>
+                  <li>Campanhas personalizadas</li>
+                  <li>Relátorios completos</li>
+                  <li>Integração com outros sistemas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produto3 -->
+        <div class="item varejao">
+          <div class="cards ">
+            <div id="1" class="product-card">
+              <div class="img"><img src="Assets/img/produtos/varejão.png" alt=""></div>
+              <div class="details">
+                <h2>Ideal para donos
+                  <br>de <span>negócios locais!</span>
+                </h2>
+                <ul>
+                  <li>E-comerce para negocios locais</li>
+                  <li>Sistema de gestão de delivery</li>
+                  <li>Envios de Status pelo whatsapp</li>
+                  <li>Cadastro de produtos</li>
+                  <li>Gestão de estoque</li>
+                  <li>Pagamentos automaticos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produto4 -->
+        <div class="item asaas">
+          <div class="cards" id="varejão">
+            <div id="1" class="product-card">
+              <div class="img"><img src="Assets/img/produtos/asaas.png" alt=""></div>
+
+              <div class="details">
+                <h2>Faça gestão das suas cobranças de <br> <span>forma profissional</span></h2>
+                <ul>
+                  <li>Sistema de gestão financeira completa</li>
+                  <li>Online</li>
+                  <li>Prático</li>
+                  <li>Emissão de NF</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produto5 -->
+        <div class="item">
+          <div class="cards">
+            <div id="1" class="product-card">
+              <div class="img"><img src="Assets/img/produtos/maturador.png" alt=""></div>
+
+              <div class="details">
+                <h2>Uma poderosa ferramenta <br><span>Em suas mãos!</span></h2>
+                <ul>
+                  <li>Sem limites de janelas de Whatsapp WEB</li>
+                  <li>Textos para maturar</li>
+                  <li>Delay de tempo por maturação</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="button-scroll">
+        <button onclick="movertoleft()"><img src="Assets/img/icons/arrow-left.png" alt=""></button>
+        <button onclick="movertoright()"><img src="Assets/img/icons/arrow-right.png" alt=""></button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section id="empresas">
+    <div class="wrapper">
+      <div>
+        <h1 class="title">Empresas que <span>apoiam</span></h1>
+        <h3>NOSSOS CLIENTES REPRESENTAM AS SEGUINTES MARCAS</h3>
+      </div>
+
+      <div class="img-empresas">
+        <img src="Assets/img/empresas/samsung.png" alt="">
+        <img src="Assets/img/empresas/agibank.png" alt="">
+        <img src="Assets/img/empresas/liderança.png" alt="">
+        <img src="Assets/img/empresas/louco-por-coxinha.png" alt="">
+        <img src="Assets/img/empresas/microlins.png" alt="">
+      </div>
+      <div>
+        <a href="https://bit.ly/wppclickmassa" target="_blank"><button class="button">Quero fazer parte</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <div class="wrapper">
+      <div class="titulos">
+        <h3>DEPOIMENTOS</h3>
+        <h2>O que os clientes dizem sobre o <span>Vecta</span>X</h2>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- comentario 1 -->
+          <div class="swiper-slide" id="comentarios">
+            <div class="card-foto">
+              <div>
+                <img src="Assets/img/perfil/perfil-andresa.jpg" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h1>Andresa Lummertz Brasil</h1>
+              <h4>Liderança Multas</h4>
+              <p>
+                "ClickMassa foi um divisor de águas no atendimento aqui na empresa, conseguimos reunir todos os setores
+                em uma única plataforma, deixando os clientes mais satisfeitos pela objetividade e eficiência. E sem
+                contar no benefício para a gestão, você faz relatório de todos os dados, inclusive métricas de
+                interações. A plataforma veio como a solução perfeita indo além de minhas expectativas!
+                "
+              </p>
+            </div>
+          </div>
+
+          <!-- comentario 2 -->
+          <div class="swiper-slide" id="comentarios">
+            <div class="card-foto">
+              <div>
+                <img src="foto-comentario.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h1>Ronaldo Galbero</h1>
+              <h4>Direto da Valor Assessoria</h4>
+              <p>
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis enim.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim."
+              </p>
+            </div>
+          </div>
+          <!-- comentarios 3 -->
+          <div class="swiper-slide" id="comentarios">
+            <div class="card-foto">
+              <div>
+                <img src="foto-comentario.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h1>Ricardo Milani</h1>
+              <h4>Cargo/O que faz</h4>
+              <p>
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis enim.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim."
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+
+  <section id="contato">
+    <div class="wrapper">
+      <div class="titulos">
+        <h1>Entre em contato com um dos nossos especialistas !</h1>
+        <div class="info">
+          <img src="Assets/img/icons/map-pin.png" alt="">
+          <p>Arena das Dunas - Natal RN</p>
+        </div>
+
+        <div class="info">
+          <img src="Assets/img/icons/mail.png" alt="">
+          <p>clickmassa@gmail.com</p>
+        </div>
+
+        <a href="https://bit.ly/wppclickmassa"   target="_blank"><button class="button" >Fale com um especialista</button></a>
+      </div>
+
+
+      <div class="img">
+        <img src="Assets/img/icons/contato.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section id="footer">
+    <div class="wrapper">
+      <div class="content">
+        <div>
+          <img src="Assets/img/logo-white.png" alt="">
+        </div>
+
+        <h1>©2022 VectaX.</h1>
+        <h1>Todos os direitos reservados.</h1>
+
+
+        <div class="links">
+          <!-- facebook -->
+          <a href=" https://www.facebook.com/profile.php?id=100078330401875
+          " target="_blank">
+            <img src="Assets/img/icons/facebook.png" alt="">
+          </a>
+          <!-- instagram -->
+          <a href="https://www.instagram.com/click.massa/
+          " target="_blank">
+            <img src="Assets/img/icons/Instagram.png" alt="">
+          </a>
+          <!-- Youtube -->
+          <a href="https://www.youtube.com/channel/UCaBhP1iyy-8XC27cfFe3gHg" target="_blank">
+            <img src="Assets/img/icons/youtube.png" alt="">
+          </a>
+          <!-- Linkedin -->
+          <a href="https://www.linkedin.com/company/vectax-solu%C3%A7%C3%B5es/mycompany/?viewAsMember=true"
+            target="_blank">
+            <img src="Assets/img/icons/LinkedIn.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- script -->
+  <script src="script/script.js"></script>
+
+
+</body>
+
+</html>
