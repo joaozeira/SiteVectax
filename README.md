@@ -17,6 +17,6 @@
 ## 💻 Projeto
 www.vectax.com.br
 
-<img src="./Assets/gif.gif"/>
+<img src="/vectax/Assets/gif.gif"/>
 
 
