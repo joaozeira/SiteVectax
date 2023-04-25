@@ -1,7 +1,4 @@
 /* ATIVAR  */
-/* 
-const activebtnMobile = document.getElementById("active-btn-mobile");
- */
 function activeMenu() {
   const nav = document.getElementById("nav");
   nav.classList.toggle("active");
@@ -25,33 +22,9 @@ function toggleMenuOnScroll() {
     }
   });
 }
+
 toggleMenuOnScroll();
 
-/* MENU DESKTOP - ATIVAR AO CLICAR */
-/* function addActive() {
-  var addActive = document.getElementById("linkhome");
-
-  addActive.classList.toggle("active");  
-}
- */
-
-/* MOVER SCROLL HORIZONTAL */
-/* PRODUTOS 1 */
-var ondescroll = document.getElementById("container1");
-function movertoleft(){
-  ondescroll.scrollBy(-250, 250);
-}
-function movertoright(){
-  ondescroll.scrollBy(250, 250); 
-}
-
-var ondescrolll = document.getElementById("container2");
-function movertoleftt(){
-  ondescrolll.scrollBy(-1200, 250);
-}
-function movertorightt(){
-  ondescrolll.scrollBy(1200, 250);
-}
 
 /* VOLTAR AO TOPO */
 document.getElementById("backToTop").addEventListener("click", function() {
@@ -75,22 +48,6 @@ function esconderBackToTop() {
 }
 esconderBackToTop();
 
-/* SWIPER - COMENTARIOS */
-const swiper = new Swiper(".swiper", {
-  cssMode: true,
-  loop: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-
 /* MOSTRAR INFORMAÇÕES NO SCROLL */
 const scrollReveal = ScrollReveal({
   origin: "top",
@@ -108,10 +65,35 @@ scrollReveal.reveal(
   .container,
   #empresas div, #empresas .img-empresas, 
   #depoimentos .titulos, #depoimentos .swiper,
-  #contato .titulos,  #contato .info, #contato .button, #contato .img,
   footer .content div, footer .content .social .links img
   `,
   { interval: 20 }
 );
 
+/* FUNCIONALIDADES */
+/* PRODUTOS CLICKMASSA */
+$('.cards-product').slick({
+  infinite: true,
+  dots: true,
+  arrows: true
+});
 
+/* SUBPRODUTOS */
+$('.cards-sub-products').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
+});
